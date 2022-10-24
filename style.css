@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+
+:root {
+    --white: #ffffff;
+    --black: #000;
+    --navBlack: #000000E6;
+    --pink: #fa96aa;
+    --grey: #d9d9d9;
+
+
+    --XL: 54px;
+    --large: 28px;
+    --medium: 22px;
+    --small: 18px;
+
+    --thick: 700;
+    --medium: 400;
+    --thin: 300;
+
+    --font: 'Quicksand', sans-serif;
+
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--font);
+}
+
+nav {
+    width: 100vw;
+    height: 25vh;
+}
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 15vh;
+}
+
+.nav-logo-container{
+    width: 150px;
+}
+
+.nav-logo-container img{
+    width: 100%;
+}
+
+.burger-container{
+    font-size: var(--large);
+    color: var(--pink);
+    text-decoration: none;
+}  
+
+.burger-container a{
+    font-size: var(--large);
+    color: var(--pink);
+    text-decoration: none;
+}  
+  .topnav {
+    overflow: hidden;
+    background-color: var(--navBlack);
+    position: relative;
+    text-align: right;
+    border-radius: 0px 0px 15px 16px;
+
+  }
+  
+  .topnav #myLinks {
+    display: none;
+  }
+  
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: var(--medium);
+    display: block;
+    text-transform: uppercase;
+    font-family: var(--font);
+    font-weight: var(--thick)
+  }
+  
+  .topnav a.icon {
+    background: var(--navBlack);
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .active {
+    background-color: #04AA6D;
+    color: white;
+  }
+
+
+  footer{
+    height: 25vh;
+    background-color: var(--grey);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .footer-icons{
+    font-size: var(--XL);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--white);
+    text-decoration: none;
+}
+
+.footer-icons .fa-brands{
+    text-decoration: none;
+    color: var(--white);
+}
+.footer-icons .fa-brands:hover{
+    transform: scale(1.2);
+    color: var(--pink);
+    transition: all ease;
+}
+
+.footer-txt-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5%;
+}
+
+.footer-txt-container h2{
+    font-size: var(--small);
+    font-weight: var(--thin);
+}

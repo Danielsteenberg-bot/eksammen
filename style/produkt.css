@@ -97,7 +97,7 @@
 
 .product{
     width: 90%;
-    height: 400px;
+    height: 500px;
     border-radius: 15px 15px 15px 15px;
     background-color: var(--white);
     border: grey 1px solid;
@@ -128,14 +128,14 @@ hr{
 }
 
 .product img{
-    height: 300px;
     width: 100%;
     border-radius: 15px 15px 0px 0px;
 
 }
 
 .product-txt{
-    height: 60px;
+    height: 100px;
+    width: 100%;
     padding-left: 20px;
     padding-top: 10px;
 }
