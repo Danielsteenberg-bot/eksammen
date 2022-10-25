@@ -35,14 +35,16 @@ const sendToMail = (e) => {
                 contactTXT.classList.add('hidden');
                 contactWrapper.style.display = "none";
                 responseDONE.classList.add('responsePLAY');
+                statusTXT.innerHTML = response.result;
              }
              else {
+                statusERR.innerHTML = response.result;                
 
              }
-           return response.json()
+           return response.json()  
         })
 
-
+    
 }
 
 formular.addEventListener("submit", sendToMail)
