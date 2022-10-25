@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+
+:root {
+    --white: #ffffff;
+    --black: #000;
+    --navBlack: #000000E6;
+    --pink: #fa96aa;
+    --grey: #d9d9d9;
+    --txtGrey: #707070;
+
+
+    --XL: 54px;
+    --large: 28px;
+    --semi: 22px;
+    --small: 18px;
+
+    --thick: 700;
+    --medium: 400;
+    --thin: 300;
+
+    --font: 'Quicksand', sans-serif;
+
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--font);
+}
+
+/* NAV */
+nav {
+    width: 100vw;
+    height: 10vh;
+}
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+}
+
+.nav-logo-container{
+    width: 150px;
+}
+
+.nav-logo-container img{
+    width: 100%;
+}
+
+.burger-container{
+    font-size: var(--large);
+    color: var(--pink);
+    text-decoration: none;
+}  
+
+.burger-container a{
+    font-size: var(--large);
+    color: var(--pink);
+    text-decoration: none;
+}  
+  .topnav {
+    overflow: hidden;
+    background-color: var(--navBlack);
+    position: relative;
+    text-align: right;
+    border-radius: 0px 0px 15px 16px;
+    z-index: 111;
+  }
+  
+  .topnav #myLinks {
+    display: none;
+    transition: all ease-in-out 10s;
+
+  }
+  
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: var(--medium);
+    display: block;
+    text-transform: uppercase;
+    font-family: var(--font);
+    font-weight: var(--thick);
+    width: 100%;
+
+  }
+  
+  .topnav a.icon {
+    background: var(--navBlack);
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  .topnav a:hover {
+    background-color: var(--pink);
+    color: var(--white);
+  }
+  
+
+/* RESPONSIVE IPAD*/
+
+@media screen and (min-width: 728px) {
+
+    .topnav {
+        text-align: center;
+    }
+  }
