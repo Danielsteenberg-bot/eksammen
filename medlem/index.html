@@ -53,13 +53,13 @@
             <div class="index-form-container">
                 <h4 class="contact-container-h4">Send Kontakt til API</h4>
                 <h4 class="error-message"></h4>
-                <form class="form-index">
-                    <input class="index-form-input index-form-name" type="name" id="name" name="name" placeholder=" Navn">
-                    <input class="index-form-input index-form-email" type="email" id="email" name="email" placeholder=" Email">
-                    <textarea class="index-form-input index-textarea" name="text" placeholder=" Hvad drejer det sig om" id="contact-text" cols="30" rows="10"></textarea>
-                    <button type="submit" class="index-form-button" >Send</button>
+                <div class="result"></div>
+                <form id="contact-form">
+                    <input name="name" type="text"/>
+                    <input name="phone" type="text" required/>
+                    <input name="message" type="text" required/>
+                    <button>Submit</button>
                 </form>
-            </div>
             <div class="response">
                 <h3 class="over-checkmark-TXT"></h3>
                 <div class="error-message"></div>

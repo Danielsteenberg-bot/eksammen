@@ -9,7 +9,7 @@ const statusERR = document.querySelector(".error-message");
 
 
 
-
+/* 
 const sendToMail = (e) => {
 
     e.preventDefault()
@@ -47,4 +47,44 @@ const sendToMail = (e) => {
     
 }
 
-formular.addEventListener("submit", sendToMail)
+formular.addEventListener("submit", sendToMail) */
+
+const onSubmit= (e) => {
+
+    e.preventDefault();
+
+    const resultElement = document.querySelector('.result');
+
+    let postObj = {
+        "name" : e.target.elements.name.value,
+        "email": e.target.elements.email.value,
+        "message": e.target.elements.text.value
+    }
+
+    console.log(postObj)
+
+    const url = 'https://smuknu.webmcdm.dk/subscribe';
+
+    fetch(url, {
+        method: 'POST',
+        body : JSON.stringify(postObj),
+        headers: {
+            'Content-Type': 'application/json'   
+        }
+    })
+    .then((response) => {
+        console.log('--->', response, response.ok)
+        
+        return response.json()
+    }
+    ).then(response => {
+        console.log('--->sdsdsd')
+        resultElement.textContent = response.result
+    })
+
+
+
+}
+
+const contactForm = document.querySelector('#contact-form');
+contactForm.addEventListener('submit', onSubmit)
