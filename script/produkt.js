@@ -3,17 +3,16 @@ const menuPage = document.querySelector(".products-container")
 
 const productTmlp = (product) => {
     return `
-<div class="product-controller">
     <div class="product">
             <div class="product-container">
                 <img src="${product.image}" alt="">
                 <div class="product-txt">
                     <h5>${product.title}</h5>
                     <h6>${product.price} kr</h6>
+                    <h6>${product.discountInPercent}</h6>
                 </div>
             </div>
         </div>
-    </div>
     `
 }
 
