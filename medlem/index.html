@@ -11,10 +11,12 @@
     <!-- CSS -->
     <link rel="stylesheet" href="../style/footer.css">
     <link rel="stylesheet" href="../style/nav.css">
+    <link rel="stylesheet" href="../style/medlemResponse.css">
 
 
     <!-- Scripts -->
    <script defer src="../script/nav.js"></script>
+   <script defer src="../script/medlem.js"></script>
 
     <!-- FONT-AWESOME -->
     <script src="https://kit.fontawesome.com/7c9eddd821.js" crossorigin="anonymous"></script>
@@ -46,6 +48,26 @@
     </div>
 
 
+    <section class="contact-container" id="contact">
+        <div class="contact-content-wrapper">
+            <div class="index-form-container">
+                <h4 class="contact-container-h4">Send Kontakt til API</h4>
+                <h4 class="error-message"></h4>
+                <form class="form-index">
+                    <input class="index-form-input index-form-name" type="name" id="name" name="name" placeholder=" Navn">
+                    <input class="index-form-input index-form-email" type="email" id="email" name="email" placeholder=" Email">
+                    <textarea class="index-form-input index-textarea" name="text" placeholder=" Hvad drejer det sig om" id="contact-text" cols="30" rows="10"></textarea>
+                    <button type="submit" class="index-form-button" >Send</button>
+                </form>
+            </div>
+            <div class="response">
+                <h3 class="over-checkmark-TXT"></h3>
+                <div class="error-message"></div>
+                <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52"><circle class="checkmarkcircle" cx="26" cy="26" r="25" fill="none"/><path class="checkmarkcheck" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/></svg>
+            </div>
+        </div>
+    </section>
+    
 
     
 <!-- FOOTER -->
