@@ -29,12 +29,15 @@
     margin: 0;
     box-sizing: border-box;
     font-family: var(--font);
+    overflow-x: hidden;
 }
 
 /* NAV */
 nav {
     width: 100vw;
     height: 10vh;
+    overflow:visible;
+
 }
 
 .nav-wrapper {
@@ -88,6 +91,7 @@ nav {
     font-family: var(--font);
     font-weight: var(--thick);
     width: 100%;
+    
 
   }
   

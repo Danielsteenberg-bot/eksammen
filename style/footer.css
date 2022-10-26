@@ -39,3 +39,26 @@ footer{
     font-size: var(--small);
     font-weight: var(--thin);
 }
+
+/* Reponsive */
+
+@media screen and (min-width: 728px) {
+
+    .footer-icons {
+        font-size: 80px;
+        justify-content: center;
+    }
+    .footer-icons a{
+        padding-right: 20px;
+    }
+
+    .footer-icons .fa-brands:hover{
+        transform: scale(1);
+        color: var(--pink);
+    }
+
+    .footer-txt-container{
+        padding-top: 0;
+    }
+
+  }

@@ -8,6 +8,7 @@
     --pink: #fa96aa;
     --grey: #d9d9d9;
     --txtGrey: #707070;
+    --beige:   #F7F0F2;
 
 
     --XL: 54px;
@@ -29,246 +30,169 @@
     box-sizing: border-box;
 }
 
-.contact-head-container{
 
+/* Landing */
+.product-landing{
+    width: 100%;
+    height: 70vh;
+    background-image: url(../assets/headers/subscribers.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.landing-txt-container{
+    background-color: var(--white);
+    color: var(--black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 50vh;
+    position: relative;
+    top: 15%;
+    text-align: center;
+
+}
+.landing-txt-container h5{
+    font-size: var(--XL);
+    text-transform: uppercase;
+    color: var(--pink);
+}
+
+.landing-txt-container p{
+    font-size: var(--small);
+    padding-top: 3%;
+    width: 75%;
+}
+
+
+
+.contact-container{
 display: flex;
 justify-content: center;
 align-items: center;
-height: 25vh;
+height: 70vh;
 width: 100%;
-text-align: center;   
+text-align: left;   
+margin-top: 5rem;
+}
+.contact-wrapper{
+    display: flex;
+justify-content: center;
+align-items: center;
+height: 60vh;
+width: 100%;
+text-align: left;   
+overflow:visible;
+
 }
 
-
-.contact-header h6{
-    font-size: 45px;
-    font-family: 'Mukta', sans-serif;
-    font-weight: 400;
-}
-.contact-paragraph h5{
-    font-size: 16px;
-    font-family: 'Mukta', sans-serif;
-    font-weight: 400;
-}
-
-
-.contact-container {
-    width: 100%;
-    height: 100vh;
-    min-height: 640px;
-
+.contact-form{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--white);    
+    width: 80%;
+    height: 100%;
+    justify-content: space-evenly;
+    margin-bottom: 5rem;
 }
-.contact-content-wrapper {
-    display: flex;
-    justify-content: center;
-    width: 100%;
+
+.contact-form input{
+    height: 40px;
+    border: 2px solid var(--txtGrey);
+    outline: var(--pink);
+
+    
 }
-.index-form-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
+
+.contact-form .message{
+    height: 220px;
+    border: 2px solid var(--txtGrey);
+    outline: var(--pink);
+    resize: none;
+
 }
-.contact-container-h4 {
-    margin-top: 60px;
-    font-size: var(--large);
-}
-.contact-container-p-top {
-    font-size: 24px;
-}
-.contact-container-p-bottom {
-    font-size: 24px;
-    margin-top: -5px;
-    margin-bottom: 40px;
-}
-.form-index {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-}
-.index-form-input {
-    width: 400px;
-    max-width: 80%;
-    height: 45px;
-    font-size: 16px;
-}
-.index-form-name {
-    margin-bottom: 20px;
-}
-.index-form-email {
-    margin-bottom: 20px;
-}
-.index-textarea {
-    height: 120px;
-    margin-bottom: 10px;
-}
-.privacy-policy-p {
-  width: 400px;
-  max-width: 80%;
-  margin-bottom: 10px;
-}
-.privacy-policy-link {
-  font-weight: 600;
-  text-decoration: underline;
-}
-.privacy-policy-link:visited {
-  font-weight: 600;
-  text-decoration: underline;
-}
-.index-form-button {
-    width: 80px;
-    border: 3px solid var(--white);
-    background-color: black;
+
+.contact-form button{
+    width: 133px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: var(--pink);
     color: var(--white);
-    font-weight: 700;
-    font-size: var(--medium);
-    margin-bottom: 60px;
-    transition: all ease-in-out .1s;
+    font-size: var(--small);
+    border: none;
+}
+ .contact-form h6{
+    font-size: var(--semi);
+    font-weight: var(--thin);
+    color: var(--txtGrey);
+    position: relative;
+    top: 2%;
 }
 
-.index-form-button:hover{
-  color: var(--black);
-  background-color: var(--white);
-  cursor: pointer;
-}
-.contact-img-container{
+
+
+.response{
     display: none;
-    overflow: hidden;
-    width: 50%; 
+    height: 100%;
 }
 
-h3{
-    color: black;
-}
-/* Responsive */
-
-@media only screen and (min-width: 768px) {
-    .contact-content-wrapper {
-        justify-content: space-between;
-    }
-    .index-form-container {
-        width: 50%;
-    }
-    .contact-container-h4 {
-        font-size: 40px;
-    }
-    .contact-container-p-top {
-        font-size: 32px;
-    }
-    .contact-container-p-bottom {
-        font-size: 32px;
-    }
-    .contact-img-container{
-        display: block;
-        background-image: url(/assets/contact-section/contact-image.jpg);
-        background-size: cover;
-        background-position: center;
-        height: 100vh;
-        min-height: 640px;
-    }
-    .contact-img-opacity {
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, .2);
-    }
-
-}
-@media only screen and (max-height: 640px) {
-  .contact-content-wrapper {
-    justify-content: space-between;
-    max-height: 640px;
-  }
-}
-
-
-/* Checkmark Contact */
-.submitDONE {
-    display: none;
-  }
-  .response{
-    display: none;
-  }
-  .responsePLAY{
-    display: block;
-    font-size: var(--large);
-    color: white;
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+.response h4{
+    font-size: var(--XL);
+    color: var(--black);
     text-align: center;
-  }  
-  .over-checkmark-TXT{
-      padding-bottom: 2%;
-  }
-  .under-checkmark-TXT{
-      padding-top: 2%;
-  }
+}
 
-  @media screen and (max-width: 500px) {
-    .responsePLAY{
-        font-size: var(--large);
-        width: 100%;
-    } 
-  }
-  
+.response .result{
+    color: var(--pink);
+    font-size: var(--large);
+    text-align: center;
+    font-weight: var(--thick);
+}
 
-/* Check mark loader efter afsendelse */
-.checkmark {
-    width: 156px;
-    height: 156px;
-    border-radius: 50%;
+.response p{
+    font-size: var(--semi);
+    word-spacing: 23;
+    text-align: center;
+}
+
+.response button{
+    width: 320px;
+    height: 60px;
+    background-color: var(--pink);
+    color: var(--white);
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 30px;
+    border: none;
+}
+
+.test{
     display: block;
-    stroke-width: 2;
-    stroke: #fff;
-    stroke-miterlimit: 10;
-    box-shadow: inset 0px 0px 0px #7ac142;
-    animation: fill 0.4s ease-in-out 0.4s forwards, scale 0.3s ease-in-out 0.9s both;
-    -webkit-animation: fill 0.4s ease-in-out 0.4s forwards, scale 0.3s ease-in-out 0.9s both;
-  }
-  .checkmark__circle {
-    stroke-dasharray: 166;
-    stroke-dashoffset: 166;
-    stroke-width: 2;
-    stroke-miterlimit: 10;
-    stroke: #7ac142;
-    fill: none;
-    animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
-    -webkit-animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
-  }
-  .checkmark__check {
-    transform-origin: 50% 50%;
-    stroke-dasharray: 48;
-    stroke-dashoffset: 48;
-    animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
-    -webkit-animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
-  }
-  @keyframes stroke {
-    100% {
-      stroke-dashoffset: 0;
-    }
-  }
-  @keyframes scale {
-    0%, 100% {
-      transform: none;
-    }
-    50% {
-      transform: scale3d(1.1, 1.1, 1);
-    }
-  }
-  @keyframes fill {
-    100% {
-      box-shadow: inset 0px 0px 0px 100px #7ac142;
-    }
-  }
-  /* Check mark loader efter afsendelse DONE */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--beige);
+}
 
-/* Checkmark Contact DONE */
+.response-img img{
+    width: 180px;
+    border: 5px solid var(--unnamed-color-fa96aa);
+    background: transparent url('img/Product01-Balm.png') 0% 0% no-repeat padding-box;
+    border: 5px solid #FA96AA;
+    border-radius: 89px;
+    opacity: 1;
+    box-shadow: 0px 3px 6px #00000029;
+}
+
+
+
+/* Reponsive */
+
+@media screen and (min-width: 728px) {
+
+    .landing-txt-container {
+        margin-right: 5rem;
+        margin-left: 5rem;
+        height: 40vh;
+    }
+  }

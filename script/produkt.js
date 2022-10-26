@@ -5,33 +5,22 @@ const productTmlp = (product) => {
     return `
     <div class="product">
             <div class="product-container">
+            <div class="product-img-container">
                 <img src="${product.image}" alt="">
-                <div class="product-txt">
-                    <h5>${product.title}</h5>
-                    <h6>${product.price} kr</h6>
-
                 </div>
+                <div class="product-txt">
+                <h5>${product.title}</h5>
+                <h6>${product.price} kr</h6>
+                
+                </div>  
+                ${product.discountInPercent == '' ? '' : `
+                <h4 class="discount">SPAR <br>${product.discountInPercent}%</h4>
+                `}
             </div>
         </div>
     `
 }
 
-const discountTmlp =  (product) =>{
-
-    if(product.discountInPercent === ""){  
-            return `
-
-            `
- }
-    else{
-        return    `
-
-            <h4 class="discount">SPAR <br>${product.discountInPercent}%</h4>
-        `
-    }
-
-
-}
 
 
 
@@ -39,18 +28,8 @@ const discountTmlp =  (product) =>{
 const writeData = (menu) => {
     console.log(menu)
     const productItems = document.querySelector(".products-wrapper");
-    const discount = document.getElementsByTagName("h4");
     menu.map((product) => {
         productItems.innerHTML += productTmlp(product);
-        productItems.innerHTML += discountTmlp(product);
-
-
-        if(product.discountInPercent === ""){
-            console.log(product.discountInPercent.valueOf());
-            
-            productItems.classList.add("test");
-/*             discount.style.display  = "none";
- */        }
 
     })
 

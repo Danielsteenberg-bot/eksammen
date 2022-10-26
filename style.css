@@ -333,6 +333,13 @@
 /* RESPONSIVE IPAD*/
 
 @media screen and (min-width: 728px) {
+
+    .landing-img{
+        height: 100vh;
+    }
+    
+
+
     .front-product-wrapper{
         flex-direction: row;
     }
@@ -346,5 +353,37 @@
     }
     .review-H{
         height: 60vh;
+    }
+
+    .product-container{
+        overflow: visible;
+    
+    }
+    
+    .product-txt{
+        overflow: visible;
+    }
+
+    .landing-txt-wrapper{
+        transform: translate(2.5%);
+        height: 50vh;
+        width: 95%;
+    }
+
+    .landing-txt-wrapper h1{
+        width: 415px;
+        font-size: 80px;
+        overflow: visible;
+    }
+
+    .landing-txt-wrapper button{
+        width: 450px;
+        font-size: medium;
+        padding: 2% 4%;
+        overflow: visible;
+    }
+
+    .landing-smukNU{
+        display: none;
     }
   }
