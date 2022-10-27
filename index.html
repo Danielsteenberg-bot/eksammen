@@ -10,10 +10,15 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style/nav.css">
     <link rel="stylesheet" href="style/footer.css">
+    <link rel="stylesheet" href="style/medlem.css">
+    <link rel="stylesheet" href="style/animationer.css">
 
     <!-- SCRIPTS -->
     <script defer src="script.js"></script>
     <script defer src="script/nav.js"></script>
+    <script defer src="script/review.js"></script>
+    <script defer src="script/medlemGrid.js"></script>
+    <script defer src="script/scroll.js"></script>
 
 
     <!-- FONT-AWESOME -->
@@ -26,7 +31,9 @@
         <div class="nav-container">
             <div class="nav-wrapper">
                 <div class="nav-logo-container">
-                    <img class="nav-logo" src="assets/logo/smuknu_logo.png" alt="Smuk Nu Logo">
+                    <a href="#">
+                        <img class="nav-logo" src="assets/logo/smuknu_logo.png" alt="Smuk Nu Logo">
+                    </a>
                 </div>
                 <div class="burger-container">
                     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -38,7 +45,7 @@
                     <div id="myLinks">
                       <a href="#">Forsiden</a>
                       <a href="produkter/">Vores Produkter</a>
-                      <a href="about">spørg om sundhed</a>
+                      <a href="sundhed/">spørg om sundhed</a>
                       <a href="medlem/index.html">bliv medlem</a>
                     </div>
                   </div>
@@ -50,11 +57,11 @@
     <div class="landing-wrapper">
         <div class="landing-img"></div>
         <div class="landing-txt-container">
-            <div class="landing-txt-wrapper">
-                <h1 class="landing-txt">Skøndhed  <span> For Alle</span></h1>
-                <h6>Alt hvad du behøver...</h6>
+            <div class="landing-txt-wrapper ">
+                <h1 class="landing-txt fadeUp">Skøndhed  <span> For Alle</span></h1>
+                <h6 class="fadeUp">Alt hvad du behøver...</h6>
                 <h6 class="landing-smukNU">SMUK NU</h6>
-                <button> <a href="produkter/index.html">Se udvalgte produkter</a></button>
+                <button class="fadeUp"> <a href="produkter/index.html">Se udvalgte produkter</a></button>
             </div>
         </div>
     </div>
@@ -76,30 +83,7 @@
             <div class="front-review-header-txt">
                 <h2>Skønheder <br> <span>Udtaler</span></h2>
             </div>
-            <div class="reviews">
-                <div class="review-H">
-                    <img src="assets/review/phoebe_larsen.jpg" alt="">
-                    <div class="review-txt-container">
-                        <p>Jeg døjer rigtig meget med uren hud, og har prøvet alt muligt. Jeg fik <strong> Honest </strong> produkter anbefalet som en 30 dags kur, hvor jeg KUN skulle bruge den morgen og aften. Det har jeg så prøvet nu, og jeg kan se en tydelig forskel. Et ekstra plus er, at den er dejlig fugtgivende.</p>
-                    </div>
-                        <div class="review-sender">
-                            <h5>Phoebe Larsen</h5>
-                            <h5>Tilfreds Kunde</h5>
-                        </div>
-                        <hr class="review-line">
-                    </div>
-                <div class="review-K">
-                    <img src="assets/review/kathrine_udgaard.jpg" alt="">
-                    <div class="review-txt-container">
-                        <p>Den hidtil bedste oplevelse med læbestifter! Jeg har fået så mange komplimenter, efter jeg er begyndt at gå med denne dagligt. Udover smuk farve, efterlader den læberne bløde og fugtige. Og det aller vigtigste - slet ikke klistret på den der ubehagelige måde, som nogen pomader kan. Den er et absolut "must have" i min håndtaske!!</p>
-                    </div>
-                        <div class="review-sender">
-                            <h5>Katrine Udgaard</h5>
-                            <h5>Tilfreds Kunde</h5>
-                        </div>
-                        <hr class="review-line">
-                    </div>
-                </div>
+            <div class="reviews"></div>
             </div>
         </div>
     </div>
@@ -112,6 +96,7 @@
                 <h6>Vær med i kundeklubben for nye <br> videoer, rabatkoder og mere!</h6>
                 <button> <a href="medlem/index.html">Bliv medlem af kundeklubben</a></button>
             </div>
+            <div class="member-img-grid"></div>
         </div> 
     </div>
 </section>
@@ -156,4 +141,5 @@
 
 
 </body>
+<script src="https://unpkg.com/scrollreveal"></script>
 </html>

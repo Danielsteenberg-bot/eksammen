@@ -12,11 +12,14 @@
     <link rel="stylesheet" href="../style/medlemResponse.css">
     <link rel="stylesheet" href="../style/footer.css">
     <link rel="stylesheet" href="../style/nav.css">
+    <link rel="stylesheet" href="../style/animationer.css">
 
 
     <!-- Scripts -->
    <script defer src="../script/nav.js"></script>
    <script defer src="../script/medlem.js"></script>
+   <script defer src="../script/scroll.js"></script>
+
 
     <!-- FONT-AWESOME -->
     <script src="https://kit.fontawesome.com/7c9eddd821.js" crossorigin="anonymous"></script>
@@ -29,8 +32,9 @@
     <div class="nav-container">
         <div class="nav-wrapper">
             <div class="nav-logo-container">
-                <img class="nav-logo" src="../assets/logo/smuknu_logo.png" alt="Smuk Nu Logo">
-            </div>
+                <a href="../">
+                    <img class="nav-logo" src="../assets/logo/smuknu_logo.png" alt="Smuk Nu Logo">
+                </a>                </div>
             <div class="burger-container">
                 <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                     <i class="fa-solid fa-bars burger-nav"></i>
@@ -40,8 +44,8 @@
             <div class="topnav">
                 <div id="myLinks">
                   <a href="../index.html">Forsiden</a>
-                  <a href="../produkter/index.html">Vores Produkter</a>
-                  <a href="about">spørg om sundhed</a>
+                  <a href="../produkter">Vores Produkter</a>
+                  <a href="../sundhed/">spørg om sundhed</a>
                   <a href="#">bliv medlem</a>
                 </div>
               </div>
@@ -55,7 +59,7 @@
     <div class="product-landing">
         <div class="landing-img-contianer">
         </div>
-        <div class="landing-txt-container">
+        <div class="landing-txt-container fadeUp">
             <div class="landing-txt-wrapper"></div>
                 <h5>Bliv <br> Medlem</h5>
                 <p>Opret dig som medlem og få flere fordele og nyheder I det øjeblik vi har dem.<br><br>
@@ -64,12 +68,6 @@
         </div>
     </div>
 </section>
-
-
-
-
-
-
 
 
 <section class="contact-container" id="contact">
@@ -136,6 +134,7 @@
     </div>
 </footer>
 
+<script src="https://unpkg.com/scrollreveal"></script>
 
 </body>
 </html>

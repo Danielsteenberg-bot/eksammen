@@ -11,6 +11,7 @@ const productTmlp = (product) => {
                 <div class="product-txt">
                 <h5>${product.title}</h5>
                 <h6>${product.price} kr</h6>
+                <button>Tilføj Kurv</button>
                 
                 </div>  
                 ${product.discountInPercent == '' ? '' : `
@@ -30,11 +31,42 @@ const writeData = (menu) => {
     const productItems = document.querySelector(".products-wrapper");
     menu.map((product) => {
         productItems.innerHTML += productTmlp(product);
-
     })
 
 
 }
+
+/* Animation til Landing produkt page */
+const productTXT = document.querySelector(".spacer-txt")
+const prodcutCON = document.querySelector(".products-wrapper")
+
+window.addEventListener("scroll", function(){
+  element = productTXT.getBoundingClientRect().y - this.window.innerHeight;
+
+  if(element < - 200){
+    productTXT.classList.add("fadeDown")
+  }
+
+  if(element < - 220){
+    prodcutCON.classList.add("fadeUp")
+
+  }
+})
+
+/* Animation til Biv medlem sektionen */
+let memberCON = document.querySelector(".member-container")
+let memberTXT = document.querySelector(".member-txt-wrapper")
+let memberGRID = document.querySelector(".member-img-grid")
+
+window.addEventListener("scroll", function(){
+  element = memberCON.getBoundingClientRect().y - this.window.innerHeight;
+
+  if(element <  - 400){
+    console.log("TAK")
+    memberTXT.classList.add("fadeRight");
+    memberGRID.classList.add("fadeLeft");
+  }
+})
 
 
 

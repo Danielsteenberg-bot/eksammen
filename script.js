@@ -16,7 +16,6 @@ const productTmlp = (product) => {
     `
 }
 
-
 const writeData = (menu) => {
     console.log(menu)
     const productItems = document.querySelector(".front-product-wrapper");
@@ -24,12 +23,8 @@ const writeData = (menu) => {
 
         if(product.recommended === true){
             productItems.innerHTML += productTmlp(product)
-
         }
     })
-
-
-
 }
 
 fetch("https://smuknu.webmcdm.dk/products/")
