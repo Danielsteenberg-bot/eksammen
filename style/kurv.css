@@ -42,13 +42,13 @@
 
 .cart-item img{
     border-radius: 15px 15px 15px 15px;
-    width: 75%;
+    width: 25%;
 }
 
 .cart-item h6{
-    padding: 20px;
     font-size: var(--small);
     padding-right: 0;
+    padding-left: 5%;
     width: 100%;
 }
 

@@ -89,7 +89,9 @@ function displayCart() {
     cartItems = JSON.parse(cartItems);
     let cartContainer = document.querySelector(".cart-items");
     let cartTotal = document.querySelector(".item-total");
-    let empty = document.querySelector(".empty")
+    let empty = document.querySelector(".empty");
+    let cartCost = localStorage.getItem("totalCost");
+
 
 
     if(cartItems && cartContainer){
@@ -109,13 +111,13 @@ function displayCart() {
                 </div>
                 <hr>
             `
-            cartTotal.innerHTML +=
-            `
-            <h6>ialt</h6>
-            <p>${item.antal * item.price} kr</p>
-            `
         }
-        })
+    })
+    cartTotal.innerHTML +=
+    `
+    <h6>ialt</h6>
+    <p>${cartCost} kr</p>
+    `
 
   
     }

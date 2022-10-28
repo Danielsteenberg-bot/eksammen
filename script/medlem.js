@@ -31,9 +31,10 @@ const onSubmit= (e) => {
         return response.json()
     }
     ).then(response => {
-        resultElement.textContent = response.result.name;
+        resultElement.innerHTML = postObj.name;
         form.style.display = "none";
-        userRes.classList.add("test");
+        userRes.classList.add("reval");
+        console.log("hej")
 
 })
 

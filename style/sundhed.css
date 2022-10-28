@@ -42,7 +42,7 @@
 .landing-txt-container{
     background-color: var(--pink);
     color: white;
-    height: 45vh;
+    height: 55vh;
     position: relative;
     top: 25%;
     overflow: visible;
@@ -71,7 +71,7 @@
     background-color: #F7F0F2;
     top: 20%;
     width: 100%;
-    height: 40vh;
+    height: 45vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
