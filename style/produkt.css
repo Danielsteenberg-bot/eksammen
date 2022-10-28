@@ -42,10 +42,13 @@
 .product-landing-txt-container{
     background-color: black;
     color: white;
-    height: 25vh;
+    height: 40vh;
     position: relative;
     top: 25%;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
 }
 .product-landing-txt-container h1{
@@ -98,7 +101,7 @@
 
 .product{
     width: 90vw;
-    height: 450px;
+    height: 500px;
     max-height: 600px;
     border-radius: 15px 15px 15px 15px;
     background-color: var(--white);
@@ -230,7 +233,7 @@ button.cartAdd:hover{
 
   .product{
     width: 100%;
-    height: 650px;
+    height: 490px;
     max-height: 700px;
 
 }
