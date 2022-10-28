@@ -2,6 +2,8 @@
 const landTXT = document.querySelector(".front-product-header-txt")
 const landPRD = document.querySelector(".front-product-wrapper")
 
+if(landTXT){
+
 window.addEventListener("scroll", function(){
   elementL = landTXT.getBoundingClientRect().y - this.window.innerHeight;
 
@@ -14,11 +16,14 @@ window.addEventListener("scroll", function(){
 
   }
 })
+}
 
 /* Animation til Biv medlem sektionen */
 let memberCON = document.querySelector(".member-container")
 let memberTXT = document.querySelector(".member-txt-wrapper")
 let memberGRID = document.querySelector(".member-img-grid")
+
+if(memberCON){
 
 window.addEventListener("scroll", function(){
   elementM = memberCON.getBoundingClientRect().y - this.window.innerHeight;
@@ -28,13 +33,17 @@ window.addEventListener("scroll", function(){
     memberGRID.classList.add("fadeLeft");
   }
 })
+}
 
 
 
 /* Animation til Review sektionen */
+
+
 let reviewTXT = document.querySelector(".front-review-header-txt")
 let reviews = document.querySelector(".reviews")
 
+if(reviews){
 window.addEventListener("scroll", function(){
   element = reviewTXT.getBoundingClientRect().y - this.window.innerHeight;
 
@@ -43,3 +52,4 @@ window.addEventListener("scroll", function(){
     reviews.classList.add("fadeUp");
   }
 })
+}

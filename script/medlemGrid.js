@@ -11,7 +11,6 @@ const memberTmlp = (member) => {
 
 
 const memberData = (menu) => {
-    console.log(menu)
     const memberContainer = document.querySelector(".member-img-grid");
     menu.map((member) => {
         memberContainer.innerHTML += memberTmlp(member);
@@ -26,7 +25,6 @@ const memberData = (menu) => {
 fetch("https://smuknu.webmcdm.dk/reviews")
 .then(response => response.json())
 .then(response => {memberData(response)
-console.log(response)
 })
 
 

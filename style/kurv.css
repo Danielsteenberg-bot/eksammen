@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+
+:root {
+    --white: #ffffff;
+    --black: #000;
+    --navBlack: #000000E6;
+    --pink: #fa96aa;
+    --grey: #d9d9d9;
+    --txtGrey: #707070;
+    --bgGrey:#F7F0F2;
+
+
+    --XL: 54px;
+    --large: 28px;
+    --semi: 22px;
+    --small: 18px;
+
+    --thick: 700;
+    --medium: 400;
+    --thin: 300;
+
+    --font: 'Quicksand', sans-serif;
+
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--font);
+}
+
+
+.cart-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 15px;
+}
+
+.cart-item img{
+    border-radius: 15px 15px 15px 15px;
+    width: 75%;
+}
+
+.cart-item h6{
+    padding: 20px;
+    font-size: var(--small);
+    padding-right: 0;
+    width: 100%;
+}
+
+.cart-items hr{
+    border: 1px solid var(--pink);
+}
+
+.item-price{
+    
+        width: 60%;
+        display: flex;
+        justify-content: flex-end;
+        font-size: var(--small);
+        font-weight: var(--thick);
+        align-items: flex-end;
+    
+}
+
+.item-total{
+    
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: var(--semi);
+        font-weight: var(--thick);
+        margin: 1rem;
+        width: 90%;
+}
+
+.item-total h6{
+    font-size: var(--semi);
+    font-weight: var(--thick);
+}
+
+.cart{
+    color: var(--pink);
+}
+
+.empty {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    font-size: var(--semi);
+    align-items: center;
+    height: 50vh;
+}
+
+
+footer{
+    width: 100vw;
+    position: relative;
+    bottom: 0;
+}
+
+  /* RESPONSIVE IPAD */
+  @media screen and (min-width: 728px) {
+    .cart-item  img{
+        width: 25%;
+    }
+    .empty{
+        font-size: var(--large);
+    }
+
+
+
+
+}
+  /* RESPONSIVE PC */
+@media screen and (min-width: 1024px) {
+
+    .item-price{
+        align-items: flex-end;
+    }
+    .cart-item img{
+        border-radius: 15px 15px 15px 15px;
+        width: 30%;
+    }
+
+    .cart-item{
+        max-width: 1024px;
+        margin: auto;
+
+    }
+    .item-total{
+        max-width: 1024px;
+        margin: auto;
+        padding: 2rem;
+
+    }
+
+    .cart-item h6{
+        width: 50%;
+    }
+
+
+
+
+
+
+}

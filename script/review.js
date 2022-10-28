@@ -18,7 +18,6 @@ const reviewTmlp = (review) => {
 
 /* Udskriv DATA */
 const reviewData = (menu) => {
-    console.log(menu)
     const reviewContainer = document.querySelector(".reviews");
     menu.map((review) => {
         reviewContainer.innerHTML += reviewTmlp(review);
@@ -31,9 +30,6 @@ const reviewData = (menu) => {
 fetch("https://smuknu.webmcdm.dk/reviews")
 .then(response => response.json())
 .then(response => {reviewData(response)
-    
-
-console.log(response)
 })
 
 

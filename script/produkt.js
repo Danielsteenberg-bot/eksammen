@@ -11,33 +11,46 @@ const productTmlp = (product) => {
                 <div class="product-txt">
                 <h5>${product.title}</h5>
                 <h6>${product.price} kr</h6>
-                <button>Tilføj Kurv</button>
+
                 
                 </div>  
+                <div class="btn-product">
+                <button class="cartAdd">Tilføj Kurv</button>
+                </div>
                 ${product.discountInPercent == '' ? '' : `
-                <h4 class="discount">SPAR <br>${product.discountInPercent}%</h4>
+                    <h4 class="discount">SPAR <br>${product.discountInPercent}%</h4>
+                  </div>
                 `}
             </div>
         </div>
     `
 }
 
-
-
-
-
+/* Udprint DATA */
 const writeData = (menu) => {
-    console.log(menu)
     const productItems = document.querySelector(".products-wrapper");
     menu.map((product) => {
         productItems.innerHTML += productTmlp(product);
     })
-
-
+   
 }
 
+
+
+
+fetch("https://smuknu.webmcdm.dk/products/")
+.then(response => response.json())
+.then(response => {writeData(response)
+
+
+
+})
+
+
+
+
 /* Animation til Landing produkt page */
-const productTXT = document.querySelector(".spacer-txt")
+ const productTXT = document.querySelector(".spacer-txt")
 const prodcutCON = document.querySelector(".products-wrapper")
 
 window.addEventListener("scroll", function(){
@@ -51,10 +64,10 @@ window.addEventListener("scroll", function(){
     prodcutCON.classList.add("fadeUp")
 
   }
-})
+}) 
 
 /* Animation til Biv medlem sektionen */
-let memberCON = document.querySelector(".member-container")
+ let memberCON = document.querySelector(".member-container")
 let memberTXT = document.querySelector(".member-txt-wrapper")
 let memberGRID = document.querySelector(".member-img-grid")
 
@@ -62,19 +75,7 @@ window.addEventListener("scroll", function(){
   element = memberCON.getBoundingClientRect().y - this.window.innerHeight;
 
   if(element <  - 400){
-    console.log("TAK")
     memberTXT.classList.add("fadeRight");
     memberGRID.classList.add("fadeLeft");
   }
-})
-
-
-
-fetch("https://smuknu.webmcdm.dk/products/")
-.then(response => response.json())
-.then(response => {writeData(response)
-console.log(response)
-})
-
-
-
+}) 
