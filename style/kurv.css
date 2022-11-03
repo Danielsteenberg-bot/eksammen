@@ -99,7 +99,7 @@
 
 footer{
     width: 100vw;
-    position: relative;
+    position: absolute;
     bottom: 0;
 }
 

@@ -71,7 +71,7 @@
 display: flex;
 justify-content: center;
 align-items: center;
-height: 70vh;
+height: 80vh;
 width: 100%;
 text-align: left;
 background-color: var(--beige);   
@@ -120,13 +120,14 @@ overflow:visible;
     color: var(--white);
     font-size: var(--small);
     border: none;
+    margin-top: 10px;
 }
  .contact-form h6{
     font-size: var(--semi);
     font-weight: var(--thin);
     color: var(--txtGrey);
     position: relative;
-    top: 2%;
+    top: 1%;
 }
 
 

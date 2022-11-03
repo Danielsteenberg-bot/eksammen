@@ -3,8 +3,6 @@ fetch("https://smuknu.webmcdm.dk/products/")
 .then(response => response.json())
 .then(response => {
 
-
-
   /*     shop funktionalitet */
 var addBTN = document.querySelectorAll(".cartAdd");
 
@@ -14,8 +12,6 @@ for (let i=0;  i < addBTN.length; i++){
     totalCost(response[i]);
   })
 }
-
-
 
     function cartItems(response){
       let productNumber = localStorage.getItem('cartItems');
@@ -63,8 +59,6 @@ for (let i=0;  i < addBTN.length; i++){
       localStorage.setItem("productsInCart",JSON.stringify(cartValue));
     }  
 
-
-
 /* beregn i alt pris  */
 
 function totalCost (response){
@@ -80,8 +74,6 @@ function totalCost (response){
   }
 
 }
-
-
 
 
 function displayCart() {
@@ -118,14 +110,8 @@ function displayCart() {
     <h6>ialt</h6>
     <p>${cartCost} kr</p>
     `
-
-  
     }
-
-
 }
-
-
 
 displayCart()
 })
