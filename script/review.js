@@ -28,8 +28,11 @@ const reviewData = (menu) => {
 
 
 fetch("https://smuknu.webmcdm.dk/reviews")
-.then(response => response.json())
+.then(response => response.json(
+
+))
 .then(response => {reviewData(response)
+    console.log(response)
 })
 
 
